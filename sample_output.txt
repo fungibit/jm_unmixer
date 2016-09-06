@@ -1,0 +1,197 @@
+# Below is the output of:
+#  % python3 bin/print_unmixed_jmtx.py -i data/tainted_jmtxs.pkl.gz --tx 7e2345ec6b8d0c17111e1af33a6f52476ed9e41ec257fe9f7cc56257309b68f9
+# See README.txt for more details.
+
+================================================================================
+TRANSACTION UNMIXED:
+================================================================================
+Tx 7e2345ec6b8d0c17111e1af33a6f52476ed9e41ec257fe9f7cc56257309b68f9 (2016-08-18 04:07:11) {5x 1.993 btc, 12->9 inouts}
+
+[TAKER]
+  IN :         1.50917279  OUT:         1.99262186
+  IN :         0.01928769                         
+  IN :         0.08006194                         
+  IN :         0.13664522                         
+  IN :         0.14481342                         
+  IN :         0.10456104                         
+  (JMFEE=0.00038236)                         
+  (TXFEE=0.00153788)                         
+[MAKER 0]
+  IN :         3.90033161  OUT:         1.99262186
+                           OUT:         1.90771975
+                           (JMFEE=0.00001000)
+[MAKER 1]
+  IN :         5.52946225  OUT:         1.99262186
+                           OUT:         3.53694002
+                           (JMFEE=0.00009963)
+[MAKER 2]
+  IN :         0.69184000  OUT:         1.99262186
+  IN :         1.46566551  OUT:         0.16490749
+                           (JMFEE=0.00002384)
+[MAKER 3]
+  IN :         0.58763935  OUT:         1.99262186
+  IN :         1.53214468  OUT:         0.12741106
+                           (JMFEE=0.00024889)
+
+POSSIBLE TAKER ADDRESSES:
+    1AMqqDWsgaE7PnCxPYCS3da1bfPvhVnXiC
+KNOWN MAKER ADDRESSES:
+    18URoYpW6RBWKkrPAg8RcZU31Hn3bJb4AF
+    164stAUtuy91MBr3JzpnaDQAeLnVpDMkph
+    1AktdWwqCfZYpMJqaEhTsZytwww531hczE
+    13rdhN9noiPwKj685zD3pDTPSX3NWitp4u
+    1NkJNrxM6cJMywvLeH6UGNXv1gvdNZn2Jh
+    16u7GbKcjUiVqk7Xsw9TUkNQb8o6762Agq
+    1FdiMKdqfTrb3WUW7Q4LBsPXytcDezTnJH
+
+MAKER ADDRESSES: 16u7GbKcjUiVqk7Xsw9TUkNQb8o6762Agq
+  1.9926 btc is spent from tx 4dd51ab2fa0888fd4c3a34be3ba7e0f5e0682dffd9f6b994af312dafbb801e8c, vout #0
+MAKER ADDRESSES: 1FdiMKdqfTrb3WUW7Q4LBsPXytcDezTnJH
+  1.9926 btc is spent from tx 7e08c9f1c310510b00ac594a5e1e68d1b4a80ec3d73994d1e3a860431c14e4f3, vout #1
+MAKER ADDRESSES: 164stAUtuy91MBr3JzpnaDQAeLnVpDMkph
+  1.9926 btc is spent from tx 42a64b9c261a1df97e1028fb5308c0bb98713473503745721400cea6ca6cb67b, vout #3
+MAKER ADDRESSES: 18URoYpW6RBWKkrPAg8RcZU31Hn3bJb4AF
+  1.9926 btc is spent from tx 800eb5c535ec12031efe7ead7ee65c23f4a8e9e9ff13856163ef5125ee0d2a2c, vout #5
+TAKER: 1AMqqDWsgaE7PnCxPYCS3da1bfPvhVnXiC
+
+
+================================================================================
+TRANSACTIONS EXPLOITED:
+================================================================================
+
+Tx 4dd51ab2fa0888fd4c3a34be3ba7e0f5e0682dffd9f6b994af312dafbb801e8c (2016-08-18 06:15:46) {7x 1.291 btc, 15->13 inouts}
+[TAKER]
+  IN :         0.18635753  OUT:         1.29115938
+  IN :         0.08623006                         
+  IN :         0.48633534                         
+  IN :         0.23699657                         
+  IN :         0.15656405                         
+  IN :         0.15656405                         
+  (JMFEE=0.01464666)                         
+  (TXFEE=0.00324156)                         
+[MAKER 0]
+  IN :         1.99262186  OUT:         1.29115938
+                           OUT:         0.70147248
+                           (JMFEE=0.00001000)
+[MAKER 1]
+  IN :         1.35742431  OUT:         1.29115938
+                           OUT:         0.06626784
+                           (JMFEE=0.00000291)
+[MAKER 2]
+  IN :         1.65885561  OUT:         1.29115938
+                           OUT:         0.36772623
+                           (JMFEE=0.00003000)
+[MAKER 3]
+  IN :         3.76101335  OUT:         1.29115938
+                           OUT:         2.46987897
+                           (JMFEE=0.00002500)
+[MAKER 4]
+  IN :         3.53694002  OUT:         1.29115938
+                           OUT:         2.24584520
+                           (JMFEE=0.00006456)
+[MAKER 5]
+  IN :         0.56378654  OUT:         1.29115938
+  IN :         0.11566865  OUT:         0.13367766
+  IN :         0.63665444                         
+  IN :         0.09421322                         
+                           (JMFEE=0.01451419)
+Values exploited:
+  1.9926 btc is spent from addr 16u7GbKcjUiVqk7Xsw9TUkNQb8o6762Agq
+
+
+Tx 7e08c9f1c310510b00ac594a5e1e68d1b4a80ec3d73994d1e3a860431c14e4f3 (2016-08-18 10:01:45) {3x 1.386 btc, 5->5 inouts}
+[TAKER]
+  IN :         0.67294632  OUT:         1.38576861
+  IN :         0.71351357                         
+  (JMFEE=0.00005122)                         
+  (TXFEE=0.00064006)                         
+[MAKER 0]
+  IN :         1.99262186  OUT:         1.38576861
+                           OUT:         0.60687947
+                           (JMFEE=0.00002622)
+[MAKER 1]
+  IN :         0.92612002  OUT:         1.38576861
+  IN :         0.96325620  OUT:         0.50363261
+                           (JMFEE=0.00002500)
+Values exploited:
+  1.9926 btc is spent from addr 1FdiMKdqfTrb3WUW7Q4LBsPXytcDezTnJH
+
+
+Tx 42a64b9c261a1df97e1028fb5308c0bb98713473503745721400cea6ca6cb67b (2016-08-18 16:37:47) {9x 1.000 btc, 15->18 inouts}
+[TAKER]
+  IN :         2.32775533  OUT:         1.00000000
+                           OUT:         1.32640679
+  (JMFEE=0.00087878)                         
+  (TXFEE=0.00046976)                         
+[MAKER 0]
+  IN :         2.52355201  OUT:         1.00000000
+                           OUT:         1.52358374
+                           (JMFEE=0.00003173)
+[MAKER 1]
+  IN :         1.53194479  OUT:         1.00000000
+                           OUT:         0.53198862
+                           (JMFEE=0.00004383)
+[MAKER 2]
+  IN :         1.62157003  OUT:         1.00000000
+                           OUT:         0.62166170
+                           (JMFEE=0.00009167)
+[MAKER 3]
+  IN :         1.99262186  OUT:         1.00000000
+                           OUT:         0.99272186
+                           (JMFEE=0.00010000)
+[MAKER 4]
+  IN :         3.37716039  OUT:         1.00000000
+                           OUT:         2.37740039
+                           (JMFEE=0.00024000)
+[MAKER 5]
+  IN :         0.55034873  OUT:         1.00000000
+  IN :         0.48231844  OUT:         0.03285717
+                           (JMFEE=0.00019000)
+[MAKER 6]
+  IN :         0.31916660  OUT:         1.00000000
+  IN :         0.57271616  OUT:         0.12341108
+  IN :         0.23140677                         
+                           (JMFEE=0.00012155)
+[MAKER 7]
+  IN :         0.11963707  OUT:         1.00000000
+  IN :         0.21771758  OUT:         0.04547848
+  IN :         0.59514856                         
+  IN :         0.11291527                         
+                           (JMFEE=0.00006000)
+Values exploited:
+  1.9926 btc is spent from addr 164stAUtuy91MBr3JzpnaDQAeLnVpDMkph
+
+
+Tx 800eb5c535ec12031efe7ead7ee65c23f4a8e9e9ff13856163ef5125ee0d2a2c (2016-08-18 07:02:07) {4x 6.774 btc, 17->8 inouts}
+[TAKER]
+  IN :         0.01407552  OUT:         6.77400000
+  IN :         8.64200000  OUT:         1.86443235
+  (JMFEE=0.01546301)                         
+  (TXFEE=0.00218016)                         
+[MAKER 0]
+  IN :        14.98467554  OUT:         6.77400000
+                           OUT:         8.21077797
+                           (JMFEE=0.00010243)
+[MAKER 1]
+  IN :         8.64200000  OUT:         6.77400000
+                           OUT:         1.86894636
+                           (JMFEE=0.00094636)
+[MAKER 2]
+  IN :         0.45150802  OUT:         6.77400000
+  IN :         1.99262186  OUT:         0.69153380
+  IN :         0.30105535                         
+  IN :         0.06762884                         
+  IN :         2.44568408                         
+  IN :         0.03154833                         
+  IN :         0.21236345                         
+  IN :         0.15011397                         
+  IN :         0.09421322                         
+  IN :         0.02068707                         
+  IN :         0.02533538                         
+  IN :         0.36720063                         
+  IN :         1.29115938                         
+                           (JMFEE=0.01441422)
+Values exploited:
+  1.9926 btc is spent from addr 18URoYpW6RBWKkrPAg8RcZU31Hn3bJb4AF
+
+
